@@ -13,8 +13,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Comando Maven para compilar el proyecto
-                    powershell 'mvn clean package'
+                    // Comando Maven para limpiar e instalar dependencias, forzando la actualización
+                    powershell 'mvn clean install -U'
                 }
             }
         }
