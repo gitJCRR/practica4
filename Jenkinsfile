@@ -10,7 +10,7 @@ pipeline {
                 // Actualiza el código desde el repositorio
                 git 'https://github.com/gitJCRR/practica4.git'
                 // Agrega este paso para asegurarte de que la última versión se obtenga
-                sh 'git pull origin main'  // Usa 'main' o el nombre de la rama relevante
+                bat 'git pull origin main'  // Usa 'main' o el nombre de la rama relevante
             }
         }
         stage('Build') {
