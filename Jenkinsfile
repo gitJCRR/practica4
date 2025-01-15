@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'Maven 3.9.9'
-        jdk 'JDK 1.7' // Cambiar según el JDK configurado en Jenkins
+        jdk 'JDK 17' // Cambiar según el JDK configurado en Jenkins
     }
     stages {
         stage('Checkout') {
