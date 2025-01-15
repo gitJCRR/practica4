@@ -34,7 +34,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('SonarQube') { // Cambiar al nombre de tu instalación de SonarQube
+                withSonarQubeEnv('SonarQube Analysis') {
                     powershell 'mvn sonar:sonar'
                 }
             }
