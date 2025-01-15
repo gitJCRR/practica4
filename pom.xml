@@ -45,11 +45,12 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.1.0</version>
         <configuration>
-          <includes>
-            <include>**/*Test.java</include>
-          </includes>
+          <testFailureIgnore>false</testFailureIgnore> <!-- No permitir que los fallos de test pasen -->
         </configuration>
       </plugin>
+
     </plugins>
   </build>
 </project>
+
+
