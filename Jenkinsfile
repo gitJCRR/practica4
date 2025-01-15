@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Comando Maven para limpiar e instalar dependencias, forzando la actualización
-                    powershell 'mvn clean install -U'
+                    bat 'mvn clean install -U'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Ejecutar pruebas y generar informes
-                    powershell 'mvn test'
+                    bat 'mvn test'
                 }
             }
             post {
