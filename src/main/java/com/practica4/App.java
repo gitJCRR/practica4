@@ -1,4 +1,4 @@
-package com.practica4;
+package com.practica44;
 
 /**
  * Hello world!
@@ -10,4 +10,5 @@ public class App
     {
         System.out.println( "Hello World!" )
     }
+    System.out.println( "Para error" )
 }
